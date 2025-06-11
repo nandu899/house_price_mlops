@@ -5,3 +5,4 @@ joblib
 pytest
 flake8
 Flask
+Flask-CORS

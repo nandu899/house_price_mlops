@@ -2,10 +2,12 @@ from flask import Flask, request, jsonify
 import pandas as pd
 import joblib
 import os
+from flask_cors import CORS
 
 from pipelines.train_pipeline import run_training_pipeline
 
 app = Flask(__name__)
+CORS(app)
 
 MODEL_PATH = 'models/houseprice_model.pkl'
 
