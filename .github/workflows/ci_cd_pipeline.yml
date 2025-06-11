@@ -43,4 +43,5 @@ jobs:
     - name: Run training pipeline
       run: |
         python app.py &
+        sleep 15  # wait 5 seconds for the server to start
         curl -X POST http://localhost:5000/train
