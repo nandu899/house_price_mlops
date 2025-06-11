@@ -40,3 +40,7 @@ jobs:
       with:
         name: deployed-model
         path: deployment/houseprice_model.pkl
+    - name: Run training pipeline
+      run: |
+        python app.py &
+        curl -X POST http://localhost:5000/train
