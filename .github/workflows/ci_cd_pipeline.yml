@@ -25,6 +25,7 @@ jobs:
 
     - name: Run tests
       run: |
+        export PYTHONPATH=.
         pytest tests/
 
     - name: Train and Deploy Model
