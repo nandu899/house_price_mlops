@@ -1,7 +1,7 @@
 import pandas as pd
 
-class DataValidator:
 
+class DataValidator:
 
     def __init__(self, required_columns=None):
         if required_columns is None:
