@@ -7,4 +7,3 @@ class HousePriceModelBuilder:
         Create and return a Linear Regression model.
         """
         return LinearRegression()
-

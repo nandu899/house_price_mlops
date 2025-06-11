@@ -1,6 +1,8 @@
 import pandas as pd
 
 class DataValidator:
+
+
     def __init__(self, required_columns=None):
         if required_columns is None:
             self.required_columns = ['area_sqr_ft', 'price_lakhs']
