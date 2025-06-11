@@ -1,5 +1,6 @@
 from sklearn.metrics import mean_squared_error, r2_score
 
+
 class HousePriceModelEvaluator:
     def evaluate_model(self, model, X_test, y_test):
         """
